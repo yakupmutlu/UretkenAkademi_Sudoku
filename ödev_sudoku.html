@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <style>
+        #cevre{
+            width: 600px;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 5px solid rgb(255, 0, 149);
+            margin-left: auto;
+            margin-right: auto;
+            
+
+        }
+        body{
+            background-color: rgb(165, 255, 127);
+        }
+        h1{
+            font-size: 35px;
+            color:black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;   
+        }
+        #cevre1{
+            width: 190px;
+            height: 190px;
+            border: 5px double gold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-collapse: collapse;
+
+        }
+        .kutu1{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(192, 212, 198);
+            color:crimson;
+            border: 2px solid black;
+            border-collapse: collapse;
+            justify-content: center;
+        }
+        #cevre2{
+            width: 190px;
+            height: 190px;
+            border: 5px double slateblue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-collapse: collapse;
+
+        }
+        .kutu2{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(192, 212, 198);
+            color:rgb(20, 120, 220);
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+        #cevre3{
+            width: 190px;
+            height: 190px;
+            border: 5px double rgb(246, 0, 127);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-collapse: collapse;
+
+        }
+        .kutu3{
+            width: 60px;
+            height: 60px;
+            background-color: rgb(192, 212, 198);
+            color:rgb(220, 20, 100);
+            border: 2px solid black;
+            border-collapse: collapse;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>SUDOKU</h1>
+<div id="cevre">
+    <div id="cevre1">
+        <div class="kutu1">5</div>
+        <div class="kutu1">3</div>
+        <div class="kutu1">4</div>
+        <div class="kutu1">6</div>
+        <div class="kutu1">7</div>
+        <div class="kutu1">2</div>
+        <div class="kutu1">1</div>
+        <div class="kutu1">9</div>
+        <div class="kutu1">8</div>
+    </div>
+    <div id="cevre1">
+        <div class="kutu1">6</div>
+        <div class="kutu1">7</div>
+        <div class="kutu1">8</div>
+        <div class="kutu1">1</div>
+        <div class="kutu1">9</div>
+        <div class="kutu1">5</div>
+        <div class="kutu1">3</div>
+        <div class="kutu1">4</div>
+        <div class="kutu1">2</div>
+    </div>
+    <div id="cevre1">
+        <div class="kutu1">9</div>
+        <div class="kutu1">1</div>
+        <div class="kutu1">2</div>
+        <div class="kutu1">3</div>
+        <div class="kutu1">4</div>
+        <div class="kutu1">8</div>
+        <div class="kutu1">5</div>
+        <div class="kutu1">6</div>
+        <div class="kutu1">7</div>
+    </div>
+    <!--Birinci satır-->
+    <div id="cevre2">
+        <div class="kutu2">8</div>
+        <div class="kutu2">5</div>
+        <div class="kutu2">9</div>
+        <div class="kutu2">4</div>
+        <div class="kutu2">2</div>
+        <div class="kutu2">6</div>
+        <div class="kutu2">7</div>
+        <div class="kutu2">1</div>
+        <div class="kutu2">3</div>
+    </div>
+    <div id="cevre2">
+        <div class="kutu2">7</div>
+        <div class="kutu2">6</div>
+        <div class="kutu2">1</div>
+        <div class="kutu2">8</div>
+        <div class="kutu2">5</div>
+        <div class="kutu2">3</div>
+        <div class="kutu2">9</div>
+        <div class="kutu2">2</div>
+        <div class="kutu2">4</div>
+    </div>
+    <div id="cevre2">
+        <div class="kutu2">4</div>
+        <div class="kutu2">2</div>
+        <div class="kutu2">3</div>
+        <div class="kutu2">7</div>
+        <div class="kutu2">9</div>
+        <div class="kutu2">1</div>
+        <div class="kutu2">8</div>
+        <div class="kutu2">5</div>
+        <div class="kutu2">6</div>
+    </div>
+    <!--ikinci satır-->
+    <div id="cevre3">
+        <div class="kutu3">9</div>
+        <div class="kutu3">6</div>
+        <div class="kutu3">1</div>
+        <div class="kutu3">2</div>
+        <div class="kutu3">8</div>
+        <div class="kutu3">7</div>
+        <div class="kutu3">3</div>
+        <div class="kutu3">4</div>
+        <div class="kutu3">5</div>
+    </div>
+    <div id="cevre3">
+        <div class="kutu3">5</div>
+        <div class="kutu3">3</div>
+        <div class="kutu3">7</div>
+        <div class="kutu3">4</div>
+        <div class="kutu3">1</div>
+        <div class="kutu3">9</div>
+        <div class="kutu3">2</div>
+        <div class="kutu3">8</div>
+        <div class="kutu3">6</div>
+    </div>
+    <div id="cevre3">
+        <div class="kutu3">2</div>
+        <div class="kutu3">8</div>
+        <div class="kutu3">4</div>
+        <div class="kutu3">6</div>
+        <div class="kutu3">3</div>
+        <div class="kutu3">5</div>
+        <div class="kutu3">1</div>
+        <div class="kutu3">7</div>
+        <div class="kutu3">9</div>
+    </div>
+    <!--Bitti-->
+
+</div>
+    
+</body>
+</html>
